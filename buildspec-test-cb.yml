@@ -15,5 +15,5 @@ phases:
     commands:
       - echo 'Build phase...'
       - echo "Build started on `date`"
-      - cd src
-      - node_modules/.bin/_mocha -R spec spec.js
+      - alias mocha="node_modules/.bin/mocha"
+      - cd src && mocha -R spec spec.js
