@@ -5,10 +5,12 @@ phases:
     commands:
       - echo 'Pre-build phase...'
       - node --version
-      - cd src
-      - alias mocha="/node_modules/.bin/mocha"
+      - export PATH=$PATH:"/node_modules/.bin/mocha"
   build:
     commands:
       - echo 'Build phase...'
       - echo "Build started on `date`"
+      - cd src
+      - ls -l
+      - pwd
       - mocha -R spec spec.js
