@@ -17,8 +17,4 @@ phases:
     commands:
       - echo 'Build phase...'
       - echo "Build started on `date`"
-      - ls -l
-      - pwd
-      - find / -name mocha -ls
-      - echo $PATH
       - mocha -R spec spec.js
