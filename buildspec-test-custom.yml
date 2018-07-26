@@ -5,7 +5,7 @@ phases:
     commands:
       - echo 'Pre-build phase...'
       - node --version
-      - export PATH=$PATH:/node_modules/.bin
+      - export PATH=/node_modules/.bin:$PATH
   build:
     commands:
       - echo 'Build phase...'

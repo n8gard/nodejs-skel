@@ -12,7 +12,7 @@ phases:
       - npm install express
       - npm install mocha
       - npm install supertest
-      - export PATH=$PATH:$PWD/node_modules/.bin
+      - export PATH=$PWD/node_modules/.bin:$PATH
   build:
     commands:
       - echo 'Build phase...'
